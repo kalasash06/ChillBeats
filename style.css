@@ -1,0 +1,153 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #f8f8f8;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul li {
+  padding: 15px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+nav ul li a.active {
+  color: #f06c64;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Main heading */
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #fcaeae; /* Soft aesthetic blush */
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* Playlist Card */
+.playlist-card {
+  width: 250px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: block;       /* Useful if this is a link */
+  color: inherit;       /* Keep text color */
+  text-decoration: none; /* Remove underline if link */
+}
+
+.playlist-card:hover {
+  transform: scale(1.05);
+}
+
+.playlist-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Card title like 'Study', 'Party', etc. */
+.playlist-card h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #333333; /* Neutral dark for contrast */
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none; /* no underline */
+}
+
+/* Card description */
+.playlist-card p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666666;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none; /* no underline */
+}
+
+/* Remove underline on any links inside playlist-card */
+.playlist-card a,
+.playlist-card a h2,
+.playlist-card a p {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  color: #999;
+}
+
+/* Playlists Page */
+.playlist-sections {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.playlist-section {
+  margin-bottom: 40px;
+}
+
+.playlist-section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #f06c64;
+}
+
+.playlist-section .emojis {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Spotify iframe bigger size */
+.playlist-section iframe {
+  width: 100%;
+  height: 450px;  /* Increased height */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
